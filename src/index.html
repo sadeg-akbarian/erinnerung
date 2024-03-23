@@ -9,13 +9,33 @@
       rel="stylesheet"
       href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <link href="style.css" rel="stylesheet" />
     <title>Nochmal Password Check</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header><h1>Password Check</h1></header>
+    <main>
+      <div class="input-container" id="input-container">
+        <input type="password" class="first-password" id="first-password" />
+        <input type="password" class="second-password" id="second-password" />
+        <button type="button" class="password-button" id="password-button">
+          Show Passwords
+        </button>
+      </div>
+      <ul class="comparison-list" id="comparison-list">
+        <li>Passwords are equal ❌</li>
+        <li>Lower Case Letters ❌</li>
+        <li>Upper Case Letters ❌</li>
+        <li>Contains Numbers ❌</li>
+        <li>At least 10 characters long ❌</li>
+      </ul>
+    </main>
     <!-- <script src="https://unpkg.com/vue@latest"></script> -->
     <script src="app.js" type="module"></script>
   </body>
