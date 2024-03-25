@@ -22,29 +22,48 @@
     <header><h1>Password Check</h1></header>
     <main>
       <div class="input-container" id="input-container">
-        <input type="password" class="first-password" id="first-password" />
-        <input type="password" class="second-password" id="second-password" />
+        <input
+          type="password"
+          class="first-password"
+          id="first-password"
+          data-cy="test-first-password"
+        />
+        <input
+          type="password"
+          class="second-password"
+          id="second-password"
+          data-cy="test-second-password"
+        />
         <button
           type="button"
           class="password-button"
           id="password-button"
+          data-cy="test-toggle-button"
         ></button>
       </div>
       <ul class="comparison-list" id="comparison-list">
         <li class="equalCheck" id="equalCheck">
-          Passwords are equal <span id="equalSymbol"></span>
+          Passwords are equal
+          <span id="equalSymbol" data-cy="test-equalSymbol"></span>
         </li>
         <li class="lowCaseCheck" id="lowCaseCheck">
-          Lower Case Letters <span id="lowCaseSymbol"></span>
+          Lower Case Letters
+          <span id="lowCaseSymbol" data-cy="test-lowCaseSymbol"></span>
         </li>
         <li class="uppCaseCheck" id="uppCaseCheck">
-          Upper Case Letters <span id="uppCaseSymbol"></span>
+          Upper Case Letters
+          <span id="uppCaseSymbol" data-cy="test-uppCaseSymbol"></span>
         </li>
         <li class="numberCheck" id="numberCheck">
-          Contains Numbers <span id="numberSymbol"></span>
+          Contains Numbers
+          <span id="numberSymbol" data-cy="test-numberCheck"></span>
         </li>
         <li class="tenCharacterCheck" id="tenCharacterCheck">
-          At least 10 characters long <span id="tenCharacterSymbol"></span>
+          At least 10 characters long
+          <span
+            id="tenCharacterSymbol"
+            data-cy="test-tenCharacterSymbol"
+          ></span>
         </li>
       </ul>
     </main>
