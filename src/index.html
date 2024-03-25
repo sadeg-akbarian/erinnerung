@@ -22,12 +22,23 @@
     <header><h1>Password Check</h1></header>
     <main>
       <div class="input-container" id="input-container">
-        <input type="password" class="first-password" id="first-password" />
-        <input type="password" class="second-password" id="second-password" />
+        <input
+          type="password"
+          class="first-password"
+          id="first-password"
+          data-cy="test-first-password"
+        />
+        <input
+          type="password"
+          class="second-password"
+          id="second-password"
+          data-cy="test-second-password"
+        />
         <button
           type="button"
           class="password-button"
           id="password-button"
+          data-cy="test-toggle-button"
         ></button>
       </div>
       <ul class="comparison-list" id="comparison-list">
