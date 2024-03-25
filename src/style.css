@@ -5,10 +5,11 @@
 }
 
 :root {
+  --page-background-color: lightsalmon;
 }
 
 html {
-  font-family: monospace;
+  font-family: "Open Sans", sans-serif;
   direction: ltr;
   font-size: 16px;
 }
@@ -17,5 +18,87 @@ body {
   margin: 0;
   height: 100vh;
   background-color: var(--page-background-color);
-  color: var(--page-text-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lobster", sans-serif;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+h1 {
+  margin-top: 3rem;
+  font-size: 6rem;
+  color: white;
+  text-shadow: black 0.25rem 0.25rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column;
+  }
+  .comparison-list {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 700.1px) {
+  main {
+    flex-direction: row;
+  }
+}
+
+.input-container,
+.comparison-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-container {
+  width: 20rem;
+}
+
+.comparison-list {
+  width: 35rem;
+  align-items: center;
+}
+
+li {
+  all: unset;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+input,
+button {
+  font-size: 1.5rem;
+  border-color: black;
+  border-radius: 5px;
+  padding: 0.25rem;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
