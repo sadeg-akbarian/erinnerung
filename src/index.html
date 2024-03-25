@@ -29,11 +29,21 @@
         </button>
       </div>
       <ul class="comparison-list" id="comparison-list">
-        <li>Passwords are equal ❌</li>
-        <li>Lower Case Letters ❌</li>
-        <li>Upper Case Letters ❌</li>
-        <li>Contains Numbers ❌</li>
-        <li>At least 10 characters long ❌</li>
+        <li class="equalCheck" id="equalCheck">
+          Passwords are equal <span id="equalSymbol">❌</span>
+        </li>
+        <li class="lowCaseCheck" id="lowCaseCheck">
+          Lower Case Letters <span id="lowCaseSymbol">❌</span>
+        </li>
+        <li class="uppCaseCheck" id="uppCaseCheck">
+          Upper Case Letters <span id="uppCaseSymbol">❌</span>
+        </li>
+        <li class="numberCheck" id="numberCheck">
+          Contains Numbers <span id="numberSymbol">❌</span>
+        </li>
+        <li class="tenCharacterCheck" id="tenCharacterCheck">
+          At least 10 characters long <span id="tenCharacterSymbol">❌</span>
+        </li>
       </ul>
     </main>
     <!-- <script src="https://unpkg.com/vue@latest"></script> -->
