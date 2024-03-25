@@ -83,7 +83,7 @@ export function togglePasswordButton(whichEvent) {
 
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: All Symbol functions ::::::::::::::::::::::::::::::::::
 
-const initialSymbolState = {
+export const initialSymbolState = {
   equal: "no",
   lowCase: "no",
   uppCase: "no",
