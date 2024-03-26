@@ -29,6 +29,24 @@ describe("test the compare-function", () => {
     expect(theResult).toEqual("Not equal");
   });
 
+  it("should return yes for equal", () => {
+    const firstPassword = {
+      value: "?",
+    };
+    const secondPassword = {
+      value: "?",
+    };
+    const symbolState = {
+      equal: "yes",
+      lowCase: "no",
+      uppCase: "no",
+      numbers: "no",
+      tenChar: "no",
+    };
+    const theResult = compareThePasswords(firstPassword, secondPassword);
+    expect(theResult).toEqual(symbolState);
+  });
+
   it("should return yes for equal and lowCase", () => {
     const firstPassword = {
       value: "hallo",
