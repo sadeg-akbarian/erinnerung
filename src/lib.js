@@ -1,5 +1,4 @@
 export function forAppJs() {
-  console.log("yyyyyyyyyyyyyyyy");
   const firstPassword = document.querySelector("#first-password");
   const secondPassword = document.querySelector("#second-password");
   const passwordButton = document.querySelector("#password-button");
@@ -133,10 +132,7 @@ export function renderSymbolState(
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: All Password Functions :::::::::::::::::
 
 export function compareThePasswords(passwordOne, passwordTwo) {
-  console.log(passwordOne.value);
-  console.log(passwordTwo.value);
   if (passwordOne.value === passwordTwo.value) {
-    console.log("Yeeeeeeeeeeeeeees");
     const symbolState = {
       equal: "yes",
       lowCase: "no",
@@ -168,7 +164,6 @@ export function compareThePasswords(passwordOne, passwordTwo) {
 
 export function updateSymbolState(passwordOne, passwordTwo) {
   const changedSymbolState = compareThePasswords(passwordOne, passwordTwo);
-  console.log(changedSymbolState);
   if (changedSymbolState === "Not equal") {
     localStorage.setItem("symbolState", JSON.stringify(initialSymbolState));
   } else {
