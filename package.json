@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "serve ./src",
     "e2e": "cypress open",
+    "e2e:ci": "cypress run",
     "test": "jest"
   },
   "keywords": [],
